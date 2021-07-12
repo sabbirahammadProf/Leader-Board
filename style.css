@@ -240,3 +240,81 @@ footer p {
     font-size: 18px;
     text-align: center;
 }
+
+/* =======================================
+     Media queary for responsive site
+====================================== */
+
+/* Ipad display */
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .navbar {
+        width: 90%;
+    }
+
+    .course-detail .fa-star,
+    span,
+    .fa-clock,
+    .course-detail {
+        font-size: 10px;
+    }
+}
+
+/* Iphone X display */
+@media only screen and (max-width: 668px) and (min-width: 280px) {
+    .container {
+        width: 82%;
+    }
+
+    .navbar {
+        width: 90%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar ul {
+        padding: 0;
+    }
+
+    .navbar ul li {
+        margin: 0 10px;
+    }
+
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .courses {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course {
+        width: 80%;
+        margin-bottom: 45px;
+    }
+
+    .course-detail .fa-star,
+    span,
+    .fa-clock,
+    .course-detail {
+        font-size: 10px;
+    }
+
+    footer {
+        padding: 20px 10px 50px 10px;
+    }
+}
