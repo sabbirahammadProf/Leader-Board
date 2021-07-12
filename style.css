@@ -33,6 +33,64 @@ section {
     margin-bottom: 5px;
 }
 
+/* ----------------------
+         Header
+--------------------- */
+
+/* Header navbar design */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #562EFF;
+    padding: 4px 0;
+}
+
+.navbar {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand h1 {
+    margin-left: 20px;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.navbar-brand a {
+    text-decoration: none;
+}
+
+.navbar-brand a img {
+    width: 40px;
+    height: 50px;
+}
+
+.nav-items {
+    align-items: center;
+}
+
+.nav-items ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.nav-items ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* ----------------------
+        Hero area
+---------------------- */
+
 /* Top players design */
 .players {
     display: grid;
@@ -99,7 +157,9 @@ hr {
     font-size: 16px;
 }
 
-/* Courses area design */
+/* ---------------------
+   Courses area design 
+ ------------------------ */
 .courses {
     display: flex;
     justify-content: space-between;
@@ -117,6 +177,10 @@ hr {
 .course .course-banner img {
     height: 130px;
     width: 100%;
+}
+
+.course-detail .course-author {
+    color: #ED6B4F;
 }
 
 .course-info {
@@ -137,50 +201,42 @@ hr {
     color: #AEAEAE;
 }
 
-/* Media quearies for responsive */
-@media only screen and (max-width: 688px) {
-    .container {
-        width: 100%;
-    }
-
-    .players,
-    .blogs {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .player,
-    .blog {
-        flex-direction: column;
-    }
-
-    .courses {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .course {
-        width: 80%;
-        margin-top: 35px;
-    }
+.course-info .course-duration {
+    color: #FF4A60;
+    background-color: #FFE4E8;
+    padding: 6px 12px;
+    border-radius: 20px;
 }
 
-@media only screen and (min-width: 688px) and (max-width: 988px) {
-    .container {
-        width: 100%;
-    }
+/* ------------------------
+     Footer area design 
+------------------------ */
+footer {
+    background-color: #562EFF;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
 
-    .players,
-    .blogs {
-        grid-template-columns: repeat(1, 1fr);
-    }
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    .courses {
-        flex-direction: column;
-        align-items: center;
-    }
+.footer-logo img {
+    width: 40px;
+    height: 50px;
+}
 
-    .course {
-        width: 60%;
-        margin-top: 35px;
-    }
+.footer-logo h1 {
+    margin-left: 20px;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
 }
